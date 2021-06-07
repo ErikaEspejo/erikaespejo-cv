@@ -62,8 +62,8 @@ const state = {
       altTextThumbnail: "Monster Battle mockup",
       description:
         "This project is a game where you can play against another player by using a random pokemon. Its characters are taken from PokeAPI.",
-      codeURL: "",
-      projectURL: "",
+      codeURL: "https://github.com/ErikaEspejo/monster-battle",
+      projectURL: "https://monster-battle.vercel.app/",
     },
   ],
   skills: [

@@ -43,7 +43,7 @@ const state = {
       description:
         "Twitto is a simulation of the social network 'Twitter', which allows you to create a user, log in, create tweets and see everything that other users post in real time.",
       codeURL: "https://github.com/ErikaEspejo/twitter-api",
-      projectURL: "https://api-twitter-mir.herokuapp.com/",
+      projectURL: "https://api-twitto.herokuapp.com/",
     },
     {
       title: "Countdown",

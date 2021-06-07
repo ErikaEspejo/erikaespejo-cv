@@ -1,0 +1,52 @@
+@import "./button.css";
+@import "./header.css";
+@import "./wrapper.css";
+@import "./button-icon.css";
+@import "./hero.css";
+@import "./skills.css";
+@import "./main.css";
+@import "./testimony.css";
+@import "./project.css";
+@import "./contact.css";
+@import "./titles.css";
+@import "./footer.css";
+@import "./animations.css";
+
+:root {
+  --fontBase: "Poppins", sans-serif;
+  --headline1: bold 95px/154px var(--fontBase);
+  --headline2: bold 60px/95px var(--fontBase);
+  --headline3: bold 48px/78px var(--fontBase);
+  --headline4: bold 34px/55px var(--fontBase);
+  --headline5: bold 24px/39px var(--fontBase);
+  --body1: normal 16px/26px var(--fontBase);
+  --body2: normal 14px/23px var(--fontBase);
+  --button: bold 14px/23px var(--fontBase);
+  --caption: normal 12px/19px var(--fontBase);
+  --gradient: radial-gradient(
+      41.48% 11.48% at 2.38% 8.52%,
+      #747de9 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    linear-gradient(135deg, #72edf2 0%, #5151e5 100%);
+  --gold: #eebf63;
+  --light-gold: #f1f1f1;
+  --black: #2f2f2f;
+  --gray: #828282;
+  --green: #6fc2c5;
+  --white: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--light-gold);
+  min-block-size: 100vh;
+  font: var(--body1);
+  color: var(--gold);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}

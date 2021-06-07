@@ -1,2 +1,1 @@
-# jaumes-portfolio
 # erikaespejo-cv

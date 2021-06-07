@@ -1,0 +1,39 @@
+.comment {
+  text-align: center;
+  padding-block-start: 40px;
+  padding-block-end: 80px;
+}
+
+.comment p {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.comment p .copy {
+  color: var(--black);
+}
+
+.comment span {
+  font: var(--headline5);
+  display: block;
+}
+.comment span:nth-child(1) {
+  font-weight: normal;
+}
+
+@media screen and (min-width: 768px) {
+  .comment {
+    text-align: center;
+    padding-block-start: 140px;
+    padding-block-end: 140px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .comment {
+    text-align: center;
+    padding-block-start: 350px;
+    padding-block-end: 250px;
+  }
+}

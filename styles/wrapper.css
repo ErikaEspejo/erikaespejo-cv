@@ -1,0 +1,13 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 328px;
+  align-self: center;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    width: 90%;
+    max-width: 1132px;
+  }
+}

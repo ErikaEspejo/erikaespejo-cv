@@ -1,0 +1,45 @@
+.skills-container {
+  padding-block: 70px;
+  position: relative;
+  left: -100%;
+  -webkit-animation: slide 0.5s forwards;
+  animation: slide 0.5s forwards;
+
+}
+
+@-webkit-keyframes slide {
+    100% { left: 100%; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
+
+.skills-container .skills-title {
+  text-align: center;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 10px;
+  max-width: 700px;
+}
+
+.skill {
+  padding-inline: 24px;
+  padding-block: 13px;
+  color: var(--black);
+  font: var(--button);
+  border-radius: 4px;
+  border: 2px solid var(--gold);
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.skill:hover {
+  background-color: var(--gold);
+  color: var(--white);
+}

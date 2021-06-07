@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Erika Espejo's Portfolio</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <img
+          class="logo-xs"
+          src="./images/logo-xs.png"
+          alt="logo de jaume"
+          width="55"
+          height="64"
+        />
+        <img
+          class="logo-md"
+          src="./images/logo-md.png"
+          alt="logo de jaume"
+          width="170"
+          height="43"
+        />
+        <nav>
+          <ul>
+            <li>
+              <a href="#hero">HOLA</a>
+            </li>
+            <li>
+              <a href="#skills">SKILLS</a>
+            </li>
+            <li>
+              <a href="#projects">PROJECTS</a>
+            </li>
+            <li>
+              <a href="#contact">LET'S TALK</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="button primary">CURRÍCULUM</button>
+      </div>
+    </header>
+    <div class="wrapper">
+      <section class="hero" id="hero">
+        <div class="hero-img">
+          <img src="./images/erika-espejo.png" alt="foto de erika" />
+        </div>
+        <div class="hero-description">
+          <h1>
+            <span class="greeting"></span>
+            <span class="hero-description-name"
+              >I'am <span class="name">Erika</span>.
+            </span>
+          </h1>
+          <img
+            class="subline"
+            src="./images/Line-Vector.png"
+            width="239"
+            alt=""
+          />
+          <p>
+            I’m a passionate and creative JavaScript Full Stack Developer from
+            Colombia. I consider myself as a curious, self-taught and intuitive
+            person, always ready to learn about anything.
+          </p>
+          <div class="social"></div>
+          <a href="#" class="button secondary"> DOWNLOAD CURRÍCULUM</a>
+        </div>
+      </section>
+      <section class="skills-container" id="skills">
+        <h3 class="skills-title">SOME OF MY SKILLS</h3>
+        <div class="skills"></div>
+      </section>
+
+      <section class="main module" id="projects">
+        <div class="comment">
+          <p>
+            <span class="copy">
+              I love learning, so on my free time I like to work and create
+              personal projects, in order to learn something new every time.
+            </span>
+            <span>
+              There are some personal projects <br />
+              I like to share with you...
+            </span>
+          </p>
+          <a href="#projects-articles">
+            <img
+              src="./icons/arrow-down.svg"
+              width="80"
+              height="80"
+              alt="flecha hacia abajo"
+            />
+          </a>
+        </div>
+        <div class="projects" id="projects-articles"></div>
+      </section>
+      <section class="contact module" id="contact">
+        <form action="" class="contact-form">
+          <h3 class="contact-title">LET'S TALK</h3>
+          <p class="contact-comment">
+            If you're interested in working with me on your next project, don't
+            hesitate to get in touch with me.
+          </p>
+          <div class="required">
+            <label for="name">Name</label>
+            <input
+              id="name"
+              class="input"
+              required
+              type="text"
+              placeholder="your nombre"
+            />
+          </div>
+          <div class="required">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              class="input"
+              required
+              type="email"
+              placeholder="your-email@email.com"
+            />
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message"></textarea>
+          </div>
+          <input type="submit" class="button primary" value="SEND MESSAGE" />
+        </form>
+      </section>
+      <footer class="footer">
+        <div class="social"></div>
+        <p class="caption">
+          <span>Made with </span>
+          <img
+            src="./images/icon-heart_outline.png"
+            alt="icono de un corazón"
+          />
+          <span> from Erika.</span>
+        </p>
+        <p>Copyright 2021 - All rights reserved.</p>
+      </footer>
+    </div>
+
+    <script id="projects-template" type="text/x-handlebars-template">
+      {{#each projects}}
+        <article class="{{this.projectClass}}">
+          <div class="project module">
+            <div class="project-tumbnail">
+              <img src="{{this.thumbnail}}" alt="{{this.altTextThumbnail}}" />
+            </div>
+            <div class="project-description">
+              <h3 class="project-title">{{this.title}}</h3>
+              <p>
+                {{this.description}}
+              </p>
+              <div class="project-buttons">
+                <a href="{{this.codeURL}}" target="_blank" class="button secondary">GO TO CODE</a>
+                <a href="{{this.projectURL}}" target="_blank" class="button primary">GO TO
+                  PROJECT</a>
+              </div>
+            </div>
+          </div>
+        </article>
+      {{/each}}
+    </script>
+    <script id="social-template" type="text/x-handlebars-template">
+      {{#each social}}
+        <a class="button-icon" target="_blank" href="{{this.link}}">
+          <img src="{{this.image}}" alt="{{this.altTextImage}}" />
+        </a>
+      {{/each}}
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.min.js"></script>
+    <script src="/js/state.js"></script>
+    <script src="/js/plugins.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

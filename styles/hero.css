@@ -1,0 +1,95 @@
+.hero {
+  padding-block-start: 16px;
+}
+
+.hero,
+.hero-description {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-description span:nth-child(1) {
+  color: var(--gray);
+}
+.hero-description span:nth-child(2) {
+  color: var(--black);
+  display: inline-block;
+}
+
+.hero-description span .name {
+  display: inline-block;
+  color: var(--gold);
+}
+
+.subline {
+  position: relative;
+  top: -10px;
+  left: 20px;
+}
+
+.hero-description a.button.primary {
+  text-align: center;
+}
+.hero-description h1,
+.hero-description p {
+  margin: 0px;
+}
+
+.hero-description p {
+  margin-bottom: 20px;
+  color: var(--black);
+}
+
+.hero-img {
+  text-align: center;
+  width: 328px;
+  margin-bottom: 20px;
+}
+
+.hero-description span {
+  display: block;
+}
+
+.hero-description-name {
+  font: var(--headline3);
+}
+
+.social {
+  padding-block-end: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .hero-img {
+    flex: 1;
+    text-align: right;
+  }
+
+  .hero-img img {
+    min-width: 330px;
+    width: 80%;
+    max-width: 500px;
+  }
+
+  .hero-description {
+    order: -1;
+  }
+
+  .hero-description a.button.primary {
+    align-self: flex-start;
+  }
+
+  .social .button-icon:nth {
+    display: none;
+  }
+  .hero-description p {
+    max-width: 410px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+}

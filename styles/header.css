@@ -4,11 +4,11 @@
   justify-content: space-between;
   align-items: center;
   block-size: 80px;
-  width: 328px;
+  width: 170px;
 }
 
 .logo-md {
-  display: none;
+  justify-content: center;
 }
 
 .header {

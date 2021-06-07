@@ -58,7 +58,7 @@ const state = {
     {
       title: "Monster Battle",
       projectClass: "monster-battle",
-      thumbnail: "./images/leonidasesteban.png",
+      thumbnail: "",
       altTextThumbnail: "",
       description:
         "Accede a más de 120 proyectos que te ayudarán a mejorar tus habilidades como desarrollador Front-End",

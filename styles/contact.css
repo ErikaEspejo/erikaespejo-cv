@@ -40,6 +40,7 @@
   border-radius: 8px;
   outline: none;
   border: 1px solid #858c94;
+  font: var(--body1);
 }
 
 .contact .input:focus,

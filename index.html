@@ -22,13 +22,6 @@
     <header class="header">
       <div class="wrapper">
         <img
-          class="logo-xs"
-          src="./images/logo-xs.png"
-          alt="logo de jaume"
-          width="55"
-          height="64"
-        />
-        <img
           class="logo-md"
           src="./images/logo-md.png"
           alt="logo de jaume"
@@ -51,7 +44,7 @@
             </li>
           </ul>
         </nav>
-        <button class="button primary">CURRÍCULUM</button>
+        <button class="button primary curriculum">CURRÍCULUM</button>
       </div>
     </header>
     <div class="wrapper">
@@ -78,7 +71,7 @@
             person, always ready to learn about anything.
           </p>
           <div class="social"></div>
-          <a href="#" class="button secondary"> DOWNLOAD CURRÍCULUM</a>
+          <a href="#" class="button secondary curriculum"> DOWNLOAD CURRÍCULUM</a>
         </div>
       </section>
       <section class="skills-container" id="skills">
@@ -110,7 +103,8 @@
         <div class="projects" id="projects-articles"></div>
       </section>
       <section class="contact module" id="contact">
-        <form action="" class="contact-form">
+        <form action="https://formspree.io/f/xwkaodra"
+          method="POST" class="contact-form" id="contact-form">
           <h3 class="contact-title">LET'S TALK</h3>
           <p class="contact-comment">
             If you're interested in working with me on your next project, don't
@@ -120,6 +114,7 @@
             <label for="name">Name</label>
             <input
               id="name"
+              name="name"
               class="input"
               required
               type="text"
@@ -130,6 +125,7 @@
             <label for="email">Email</label>
             <input
               id="email"
+              name="email"
               class="input"
               required
               type="email"
@@ -138,7 +134,7 @@
           </div>
           <div>
             <label for="message">Message</label>
-            <textarea id="message"></textarea>
+            <textarea id="message" name="message"></textarea>
           </div>
           <input type="submit" class="button primary" value="SEND MESSAGE" />
         </form>

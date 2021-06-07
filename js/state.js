@@ -58,10 +58,10 @@ const state = {
     {
       title: "Monster Battle",
       projectClass: "monster-battle",
-      thumbnail: "",
-      altTextThumbnail: "",
+      thumbnail: "./images/monsterbattle-mockup.png",
+      altTextThumbnail: "Monster Battle mockup",
       description:
-        "Accede a más de 120 proyectos que te ayudarán a mejorar tus habilidades como desarrollador Front-End",
+        "This project is a game where you can play against another player by using a random pokemon. Its characters are taken from PokeAPI.",
       codeURL: "",
       projectURL: "",
     },

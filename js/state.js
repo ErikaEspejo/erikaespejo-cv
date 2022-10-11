@@ -16,12 +16,6 @@ const state = {
       altTextImage: "icono de correo electronico",
     },
     {
-      name: "twitter",
-      link: "https://twitter.com/Erika__Espejo",
-      image: "./icons/icon-twitter_squared.svg",
-      altTextImage: "icono de twitter",
-    },
-    {
       name: "github",
       link: "https://github.com/ErikaEspejo",
       image: "./icons/icon-github.svg",
